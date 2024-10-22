@@ -13,7 +13,7 @@ function PasswordGenerator() {
     let str1 = "";
     if (char1) str += "!@#$%^&*";
     if (number) str += "0123456789";
-    for (let i = 1; i < length; i++) {
+    for (let i = 0; i < length; i++) {
       const character = Math.floor(Math.random() * str.length);
       str1 += str.charAt(character);
       setPass(str1);
